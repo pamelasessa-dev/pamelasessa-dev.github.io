@@ -1,13 +1,10 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-
-
 }
+
 
 #encabezado {
     background-color: rgb(217, 168, 168);
@@ -16,11 +13,11 @@ body {
     text-align: center;
 }
 
-img{
+img {
     width: 150px;
     border-radius: 100%;
-
 }
+
 
 .menu {
     list-style: none;
@@ -29,6 +26,7 @@ img{
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* para que no se corte en pantallas pequeñas */
 }
 
 .menu li a {
@@ -41,7 +39,7 @@ img{
     text-decoration: underline;
 }
 
-/* Secciones */
+
 .seccion-inicio,
 .seccion-experiencia,
 .seccion-imagen,
@@ -51,7 +49,6 @@ img{
     background-color: #f2f2f2;
     border-radius: 10px;
 }
-
 
 #pie {
     background-color: #222;
@@ -70,8 +67,73 @@ img{
     border: 2px solid #336699;
     border-radius: 5px;
     width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.seccion-imagen :hover {
+
+.seccion-imagen img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(242, 168, 242, 0.5);
+}
+
+
+
+/* 1. Resolución estándar 1366x768 */
+@media screen and (max-width: 1366px) {
+    body {
+        font-size: 16px;
+    }
+
+    .seccion-imagen img {
+        width: 250px;
+    }
+}
+
+/* 2. Tablet en modo vertical (768x1024) */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    .menu {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .seccion-imagen img {
+        width: 220px;
+    }
+}
+
+/* 3. Smartphone pequeño (320x568) */
+@media screen and (max-width: 568px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #encabezado h1 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .seccion-imagen img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .seccion-inicio,
+    .seccion-experiencia,
+    .seccion-imagen,
+    .seccion-contacto {
+        margin: 10px;
+        padding: 15px;
+    }
 }
