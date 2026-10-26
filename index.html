@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Pamela Sessa | Perfil Profesional</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <meta name="description" content="Portfolio de Pamela Sessa, Desarrolladora Full Stack Junior en Uruguay. Proyectos de aplicaciones web y APIs REST.">
+  <title>Pamela Sessa | Desarrolladora Full Stack Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Pamela Sessa, inicio"><span class="brand-mark">ps</span><span>Pamela Sessa</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#formacion">Formación</a>
+    </nav>
+    <a class="header-contact" href="mailto:karinasessa@gmail.com">Hablemos <span aria-hidden="true">↗</span></a>
+  </header>
 
-    <header>
-        <h1>Pamela Sessa</h1>
-        <p>Asesora Comercial | Soporte Técnico | Desarrolladora Web Junior</p>
-    </header>
-
-    <section class="cards">
-        <div class="card">
-            <h2>Ventas</h2>
-            <p>Experiencia en atención al cliente y gestión comercial.</p>
-            <a href="ventas.html">Ver perfil</a>
-        </div>
-
-        <div class="card">
-            <h2>Soporte Técnico</h2>
-            <p>Instalación, mantenimiento y asesoramiento técnico.</p>
-            <a href="soporte.html">Ver perfil</a>
-        </div>
-
-        <div class="card">
-            <h2>Desarrollo Web</h2>
-            <p>Proyectos web realizados con HTML, CSS y JavaScript.</p>
-            <a href="desarrollo.html">Ver perfil</a>
-        </div>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> DISPONIBLE PARA NUEVOS DESAFÍOS <span class="location">· URUGUAY</span></p>
+        <h1>Hola, soy<br><span>Pamela Sessa.</span></h1>
+        <p class="hero-role">Desarrolladora <span>Full Stack Junior</span></p>
+        <p class="hero-intro">Construyo aplicaciones web y APIs REST mientras sigo aprendiendo y creciendo en equipo. Me gusta investigar, resolver problemas y convertir ideas en soluciones claras.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#proyectos">Explorar proyectos <span>↓</span></a><a class="button button-quiet" href="mailto:karinasessa@gmail.com">Contactarme <span>↗</span></a></div>
+        <div class="hero-links"><a href="https://github.com/pamelasessa-dev" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><span class="link-divider">/</span><a href="mailto:karinasessa@gmail.com">karinasessa@gmail.com</a></div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustración decorativa de código"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="visual-core"><span class="core-bracket">{</span><span class="core-code">&lt;/&gt;</span><span class="core-bracket">}</span></div><span class="float-tag tag-api">API REST</span><span class="float-tag tag-ts">TypeScript</span><span class="float-tag tag-react">React</span><span class="visual-caption">aprendiendo · creando · compartiendo</span></div>
+      <div class="hero-index"><span>01</span> / 04</div>
     </section>
 
+    <section class="intro-strip"><div class="wrap strip-inner"><span class="strip-label">EN POCAS PALABRAS</span><p>Curiosidad técnica, aprendizaje autónomo y ganas de aportar desde el primer día.</p><span class="strip-arrow">↘</span></div></section>
+
+    <section class="section wrap about-section" id="sobre-mi">
+      <div class="section-heading"><p class="eyebrow">01 — PERFIL</p><h2>Desarrollo con intención.</h2></div>
+      <div class="about-content"><p class="about-lead">Soy desarrolladora Full Stack Junior en formación, con experiencia práctica en proyectos individuales y colaborativos.</p><p>Desarrollo aplicaciones web y APIs REST. Me destaco por aprender rápidamente, investigar de forma autónoma y resolver problemas técnicos. Busco mi primera oportunidad laboral como desarrolladora web Full Stack, frontend o backend junior, donde pueda seguir creciendo y contribuir al equipo.</p><a class="text-link" href="mailto:karinasessa@gmail.com">¿Trabajamos juntos? <span>↗</span></a></div>
+    </section>
+
+    <section class="section projects-section" id="proyectos"><div class="wrap">
+      <div class="section-heading heading-row"><div><p class="eyebrow">02 — TRABAJO SELECCIONADO</p><h2>Proyectos destacados<span class="accent">.</span></h2></div><span class="heading-note">01 individual · 01 colaborativo · 01 en desarrollo</span></div>
+      <article class="project-card project-featured"><div class="project-art art-sgaf"><span class="art-label">SISTEMA ACADÉMICO</span><div class="dashboard"><div class="dash-top"><i></i><i></i><i></i><span>SGAF / panel</span></div><div class="dash-content"><div class="dash-sidebar"><b></b><b></b><b></b><b></b></div><div class="dash-main"><div class="dash-title"></div><div class="dash-stats"><i></i><i></i><i></i></div><div class="dash-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div><span class="art-index">01</span></div><div class="project-info"><div class="project-meta"><span>PROYECTO INDIVIDUAL</span><span>BACKEND · API REST</span></div><h3>SGAF <span>— Sistema de Gestión Académica y Financiera</span></h3><p>API REST para gestionar procesos académicos, administrativos y financieros. Incluye autenticación mediante JWT, gestión de roles, validaciones y documentación con Swagger.</p><div class="tag-list"><span>NestJS</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>JWT</span><span>Swagger</span></div><div class="project-bottom"><span class="project-focus">Autenticación · Datos · API</span><a class="project-link" href="https://github.com/pamelasessa-dev" target="_blank" rel="noreferrer" aria-label="Ver proyectos de Pamela en GitHub">Ver en GitHub <span>↗</span></a></div></div></article>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-art art-help"><span class="art-label">SOPORTE INTERNO</span><div class="ticket-stack"><div class="ticket ticket-back"><i></i><b></b><em></em></div><div class="ticket ticket-front"><span class="ticket-status">ABIERTO</span><i></i><b></b><em></em><small>Ticket #0248</small></div></div><span class="art-index">02</span></div><div class="project-info"><div class="project-meta"><span>PROYECTO COLABORATIVO</span><span>BACKEND · API REST</span></div><h3>API Backend para Help Desk Interno</h3><p>Participé en equipo en una API para soporte interno. Mi contribución incluyó funcionalidades relacionadas con tickets, comentarios, usuarios, autenticación, manejo de excepciones y documentación.</p><div class="tag-list"><span>NestJS</span><span>TypeScript</span><span>Prisma</span><span>Swagger / OpenAPI</span></div><div class="project-bottom"><span class="project-focus">Trabajo en equipo</span><a class="project-link" href="https://github.com/pamelasessa-dev" target="_blank" rel="noreferrer" aria-label="Ver proyectos de Pamela en GitHub">Ver en GitHub <span>↗</span></a></div></div></article>
+        <article class="project-card"><div class="project-art art-zoo"><span class="art-label">EXPLORAR · DESCUBRIR</span><div class="zoo-map"><div class="map-path"></div><span class="map-pin pin-one">✳</span><span class="map-pin pin-two">✳</span><span class="map-pin pin-three">✳</span><div class="map-card"><span>VILLA DOLORES</span><b>Tu recorrido<br>empieza aquí</b></div></div><span class="art-index">03</span></div><div class="project-info"><div class="project-meta"><span>EN DESARROLLO</span><span>FRONTEND</span></div><h3>Zoológico Villa Dolores</h3><p>Aplicación frontend para explorar animales y facilitar la orientación de los visitantes mediante una guía del zoológico.</p><div class="tag-list"><span>React</span><span>TypeScript</span><span>Vite</span></div><div class="project-bottom"><span class="project-focus"><i class="status-dot"></i> En desarrollo</span><a class="project-link" href="https://github.com/pamelasessa-dev" target="_blank" rel="noreferrer" aria-label="Ver proyectos de Pamela en GitHub">Ver en GitHub <span>↗</span></a></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section wrap tech-section" id="tecnologias"><div class="section-heading heading-row"><div><p class="eyebrow">03 — HERRAMIENTAS</p><h2>Mi stack de trabajo<span class="accent">.</span></h2></div><p class="heading-note">Tecnologías que conozco y utilizo<br>en mis proyectos.</p></div><div class="tech-grid"><article class="tech-group"><div class="tech-group-head"><span class="tech-icon">&lt;/&gt;</span><div><h3>Frontend</h3><p>Interfaces y experiencias web</p></div></div><div class="tech-tags"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span></div></article><article class="tech-group"><div class="tech-group-head"><span class="tech-icon">{ }</span><div><h3>Backend</h3><p>Servicios y APIs</p></div></div><div class="tech-tags"><span>Node.js</span><span>Express</span><span>NestJS</span><span>APIs REST</span></div></article><article class="tech-group"><div class="tech-group-head"><span class="tech-icon">⌘</span><div><h3>Datos & herramientas</h3><p>Persistencia y flujo de trabajo</p></div></div><div class="tech-tags"><span>PostgreSQL</span><span>SQL</span><span>Prisma</span><span>Git</span><span>GitHub</span><span>Swagger / OpenAPI</span><span>JWT</span><span>Passport</span><span>Supabase</span><span>Render</span></div></article></div></section>
+
+    <section class="education-section" id="formacion"><div class="wrap education-layout"><div class="section-heading"><p class="eyebrow">04 — APRENDIZAJE</p><h2>Formación<br>en progreso.</h2><p class="education-note">Aprender es parte de cómo trabajo. Sigo ampliando mis conocimientos paso a paso.</p><div class="language-card"><span class="language-symbol">文</span><div><span class="language-label">IDIOMAS</span><p><b>Español</b> · Nativo <span class="language-separator">/</span> <b>Inglés</b> · A2</p></div></div></div><div class="timeline"><article class="timeline-item current"><span class="timeline-year">EN CURSO</span><span class="timeline-dot"></span><div><h3>Desarrollador Web Full Stack</h3><p>Funval</p><span class="timeline-state">Formación actual</span></div></article><article class="timeline-item"><span class="timeline-year">2026</span><span class="timeline-dot"></span><div><h3>Computer Hardware Basics</h3><p>Cisco Networking Academy</p><span class="timeline-state">Curso</span></div></article><article class="timeline-item"><span class="timeline-year">2025</span><span class="timeline-dot"></span><div><h3>Curso Desarrollador Web</h3><p>Ceibal</p><span class="timeline-state">Curso</span></div></article><article class="timeline-item"><span class="timeline-year">2025</span><span class="timeline-dot"></span><div><h3>Habilidades Digitales para la Empleabilidad</h3><p>INEFOP / Microsoft</p><span class="timeline-state">Curso</span></div></article></div></div></section>
+
+    <section class="contact-section"><div class="wrap contact-inner"><div><p class="eyebrow">¿TENÉS UN PROYECTO O UNA OPORTUNIDAD?</p><h2>Hagamos algo<br><span>que valga la pena.</span></h2></div><a class="contact-cta" href="mailto:karinasessa@gmail.com">Escribime un correo <span>↗</span></a><span class="contact-orb"></span></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">ps</span><span>Pamela Sessa</span></a><p>Diseñado y desarrollado con curiosidad. <span>© 2026</span></p><div class="footer-links"><a href="https://github.com/pamelasessa-dev" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:karinasessa@gmail.com">Email ↗</a></div></div></footer>
 </body>
 </html>
