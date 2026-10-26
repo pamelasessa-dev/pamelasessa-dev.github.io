@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
-const email = 'mailto:karinasessa@gmail.com'
+const email = 'https://mail.google.com/mail/?view=cm&fs=1&to=karinasessa%40gmail.com&su=Contacto%20desde%20mi%20portfolio'
+const mailto = 'mailto:karinasessa@gmail.com'
 const github = 'https://github.com/pamelasessa-dev'
 
 const projects = [
@@ -64,7 +65,7 @@ function App() {
     <header className="site-header flex items-center justify-between">
       <a className="brand" href="#inicio" aria-label="Pamela Sessa, inicio"><span className="brand-mark">ps</span><span>Pamela Sessa</span></a>
       <nav aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#formacion">Formación</a></nav>
-      <a className="header-contact" href={email}>Hablemos <span aria-hidden="true">↗</span></a>
+      <a className="header-contact" href={email} target="_blank" rel="noreferrer">Hablemos <span aria-hidden="true">↗</span></a>
     </header>
 
     <main>
@@ -74,8 +75,8 @@ function App() {
           <h1>Hola, soy<br /><span>Pamela Sessa.</span></h1>
           <p className="hero-role">Desarrolladora <span>Full Stack Junior</span></p>
           <p className="hero-intro">Construyo aplicaciones web y APIs REST mientras sigo aprendiendo y creciendo en equipo. Me gusta investigar, resolver problemas y convertir ideas en soluciones claras.</p>
-          <div className="hero-actions"><a className="button button-primary" href="#proyectos">Explorar proyectos <span>↓</span></a><a className="button button-quiet" href={email}>Contactarme <span>↗</span></a></div>
-          <div className="hero-links"><a href={github} target="_blank" rel="noreferrer">GitHub <span>↗</span></a><span className="link-divider">/</span><a href={email}>karinasessa@gmail.com</a></div>
+          <div className="hero-actions"><a className="button button-primary" href="#proyectos">Explorar proyectos <span>↓</span></a><a className="button button-quiet" href={email} target="_blank" rel="noreferrer">Contactarme <span>↗</span></a></div>
+          <div className="hero-links"><a href={github} target="_blank" rel="noreferrer">GitHub <span>↗</span></a><span className="link-divider">/</span><a href={email} target="_blank" rel="noreferrer">karinasessa@gmail.com</a></div>
         </div>
         <div className="hero-visual" aria-label="Ilustración decorativa de código"><div className="visual-orbit orbit-one" /><div className="visual-orbit orbit-two" /><div className="visual-core"><span className="core-bracket">{'{'}</span><span className="core-code">&lt;/&gt;</span><span className="core-bracket">{'}'}</span></div><span className="float-tag tag-api">API REST</span><span className="float-tag tag-ts">TypeScript</span><span className="float-tag tag-react">React</span><span className="visual-caption">aprendiendo · creando · compartiendo</span></div>
         <div className="hero-index"><span>01</span> / 04</div>
@@ -85,7 +86,7 @@ function App() {
 
       <section className="section wrap about-section mx-auto" id="sobre-mi">
         <div className="section-heading"><p className="eyebrow">01 — PERFIL</p><h2>Desarrollo con intención.</h2></div>
-        <div className="about-content"><p className="about-lead">Soy desarrolladora Full Stack Junior en formación, con experiencia práctica en proyectos individuales y colaborativos.</p><p>Desarrollo aplicaciones web y APIs REST. Me destaco por aprender rápidamente, investigar de forma autónoma y resolver problemas técnicos. Busco mi primera oportunidad laboral como desarrolladora web Full Stack, frontend o backend junior, donde pueda seguir creciendo y contribuir al equipo.</p><a className="text-link" href={email}>¿Trabajamos juntos? <span>↗</span></a></div>
+        <div className="about-content"><p className="about-lead">Soy desarrolladora Full Stack Junior en formación, con experiencia práctica en proyectos individuales y colaborativos.</p><p>Desarrollo aplicaciones web y APIs REST. Me destaco por aprender rápidamente, investigar de forma autónoma y resolver problemas técnicos. Busco mi primera oportunidad laboral como desarrolladora web Full Stack, frontend o backend junior, donde pueda seguir creciendo y contribuir al equipo.</p><a className="text-link" href={email} target="_blank" rel="noreferrer">¿Trabajamos juntos? <span>↗</span></a></div>
       </section>
 
       <section className="section projects-section" id="proyectos"><div className="wrap mx-auto">
@@ -101,12 +102,13 @@ function App() {
 
       <section className="education-section" id="formacion"><div className="wrap education-layout mx-auto"><div className="section-heading"><p className="eyebrow">04 — APRENDIZAJE</p><h2>Formación<br />en progreso.</h2><p className="education-note">Aprender es parte de cómo trabajo. Sigo ampliando mis conocimientos paso a paso.</p><div className="language-card"><span className="language-symbol">文</span><div><span className="language-label">IDIOMAS</span><p><b>Español</b> · Nativo <span className="language-separator">/</span> <b>Inglés</b> · A2</p></div></div></div><div className="timeline">{education.map(item => <article className={`timeline-item ${item.current ? 'current' : ''}`} key={item.title}><span className="timeline-year">{item.year}</span><span className="timeline-dot" /><div><h3>{item.title}</h3><p>{item.place}</p><span className="timeline-state">{item.state}</span></div></article>)}</div></div></section>
 
-      <section className="contact-section"><div className="wrap contact-inner mx-auto"><div><p className="eyebrow">¿TENÉS UN PROYECTO O UNA OPORTUNIDAD?</p><h2>Hagamos algo<br /><span>que valga la pena.</span></h2></div><a className="contact-cta" href={email}>Escribime un correo <span>↗</span></a><span className="contact-orb" /></div></section>
+      <section className="contact-section"><div className="wrap contact-inner mx-auto"><div><p className="eyebrow">¿TENÉS UN PROYECTO O UNA OPORTUNIDAD?</p><h2>Hagamos algo<br /><span>que valga la pena.</span></h2></div><div className="contact-actions"><a className="contact-cta" href={email} target="_blank" rel="noreferrer">Escribime un correo <span>↗</span></a><a className="contact-fallback" href={mailto}>¿Preferís otra app de correo? Usá este enlace</a></div><span className="contact-orb" /></div></section>
     </main>
 
-    <footer className="site-footer"><div className="wrap footer-inner mx-auto"><a className="brand" href="#inicio"><span className="brand-mark">ps</span><span>Pamela Sessa</span></a><p>Diseñado y desarrollado con curiosidad. <span>© {new Date().getFullYear()}</span></p><div className="footer-links"><a href={github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={email}>Email ↗</a></div></div></footer>
+    <footer className="site-footer"><div className="wrap footer-inner mx-auto"><a className="brand" href="#inicio"><span className="brand-mark">ps</span><span>Pamela Sessa</span></a><p>Diseñado y desarrollado con curiosidad. <span>© {new Date().getFullYear()}</span></p><div className="footer-links"><a href={github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={email} target="_blank" rel="noreferrer">Email ↗</a></div></div></footer>
   </>
 }
 
 export default App
+
 
